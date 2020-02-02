@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <style>
+     body{
+       text-align: center;
+       font-family: 'Turret Road', cursive;
+
+     }
+     tr{
+       text-align: center;
+     }
+     </style>
+      <title>CROP PREDICT</title>
+      <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+   </head>
+
+   <body>
+      <div class = "card-panel teal lighten-2"><h3>CROP PREDICTION</h3></div>
+      <div class = "row">
+         <form action="http://localhost:5000/cropresult" method = "POST" class="col s12">
+
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input  id = "hum" type = "text" name="hum"
+                     class = "validate">
+                  <label for = "hum">AIR HUMIDITY</label>
+               </div>
+            </div>
+
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input  id = "temp" type = "text" name="temp"
+                     class = "validate">
+                  <label for = "temp">AIR TEMPERATURE</label>
+               </div>
+            </div>
+
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input  id = "ph" type = "text" name="ph"
+                     class = "validate">
+                  <label for = "ph">SOIL PH</label>
+               </div>
+            </div>
+
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input  id = "rainfall" type = "text" name="rainfall"
+                     class = "validate">
+                  <label for = "rainfall">RAINFALL</label>
+               </div>
+            </div>
+
+            <div class="row">
+              <input type = "submit" value = "PREDICT" />
+            </div>
+
+
+
+
+
+
+         </form>
+      </div>
+   </body>
+</html>

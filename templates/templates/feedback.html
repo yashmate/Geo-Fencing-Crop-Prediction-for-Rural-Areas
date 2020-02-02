@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../static/css/animate.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../static/img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <!-- <li><a href="mailbox.html">Mailbox</a></li> -->
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        VF+
+                    </div>
+                </li>
+                <li>
+                   <a href="http://127.0.0.1:5000/crop"><i class="fa fa-crop"></i> <span class="nav-label">Predict Crop</span></a>
+                </li>
+                <li>
+                   <a href="http://127.0.0.1:5000/dashboard"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+
+                 <li>
+                  <a href="http://127.0.0.1:5000/certificate"><i class="fa fa-file"></i> <span class="nav-label">7/12 Extract</span></a>
+                </li>
+
+                <li>
+                 <a href="http://127.0.0.1:5000/feedback"><i class="fa fa-comments-o"></i> <span class="nav-label">Feedback</span></a>
+               </li>
+                <!-- <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                        <li class="active"><a href="dashboard_5.html">Dashboard v.5</a></li>
+                    </ul>
+                </li> -->
+
+
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+                <h2>&nbsp;&nbsp;Feedback</h2>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        </div>
+
+
+
+
+ <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+
+                        <div class="ibox-content">
+                            <form action="http://localhost:5000/feedback" method = "POST"class="form-horizontal">
+                                <div class="form-group"><label class="col-sm-2 control-label">Name</label>
+
+                                    <div class="col-sm-10"><input name="name"type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-10"><input name="email"type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Phone No.</label>
+
+                                    <div class="col-sm-10"><input name="phone"type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                 <div class="form-group"><label class="col-sm-2 control-label">Complaint</label>
+
+                                    <div class="col-sm-10"><input name="complaint" type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="../static/js/plugins/flot/jquery.flot.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="../static/js/plugins/flot/jquery.flot.time.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../static/js/inspinia.js"></script>
+    <script src="../static/js/plugins/pace/pace.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="../static/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            var sparklineCharts = function(){
+                $("#sparkline1").sparkline([34, 43, 43, 35, 44, 32, 44, 52], {
+                    type: 'line',
+                    width: '100%',
+                    height: '50',
+                    lineColor: '#1ab394',
+                    fillColor: "transparent"
+                });
+
+                $("#sparkline2").sparkline([32, 11, 25, 37, 41, 32, 34, 42], {
+                    type: 'line',
+                    width: '100%',
+                    height: '50',
+                    lineColor: '#1ab394',
+                    fillColor: "transparent"
+                });
+
+                $("#sparkline3").sparkline([34, 22, 24, 41, 10, 18, 16,8], {
+                    type: 'line',
+                    width: '100%',
+                    height: '50',
+                    lineColor: '#1C84C6',
+                    fillColor: "transparent"
+                });
+            };
+
+            var sparkResize;
+
+            $(window).resize(function(e) {
+                clearTimeout(sparkResize);
+                sparkResize = setTimeout(sparklineCharts, 500);
+            });
+
+            sparklineCharts();
+
+
+
+
+            var data1 = [
+                [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,20],[11,10],[12,13],[13,4],[14,7],[15,8],[16,12]
+            ];
+            var data2 = [
+                [0,0],[1,2],[2,7],[3,4],[4,11],[5,4],[6,2],[7,5],[8,11],[9,5],[10,4],[11,1],[12,5],[13,2],[14,5],[15,2],[16,0]
+            ];
+            $("#flot-dashboard5-chart").length && $.plot($("#flot-dashboard5-chart"), [
+                        data1,  data2
+                    ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 0,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+
+                            borderWidth: 2,
+                            color: 'transparent'
+                        },
+                        colors: ["#1ab394", "#1C84C6"],
+                        xaxis:{
+                        },
+                        yaxis: {
+                        },
+                        tooltip: false
+                    }
+            );
+
+        });
+    </script>
+</body>
+</html>
